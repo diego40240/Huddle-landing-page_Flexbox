@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-size: 10px;
+    
+}
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 85% 100%;
+    overflow-y: hidden;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+    
+}
+
+
+
+.principal{
+    min-width: none;width: 90%;
+    height: 80%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.contenido {
+    /* background-color: green; */
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items: center;
+    
+
+}
+
+.cabecera {
+    margin: 30px 0 50px 0;
+    /* background-color: red; */
+}
+
+.panel{
+    min-width: 55%;
+    height: 100%;
+    
+    
+}
+
+
+article{
+    min-width: 45%;
+    min-height: 100%;
+    padding: 0 100px 150px 100px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    
+  
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    
+}
+
+.descri{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.boton{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    padding: 20px 70px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 5px 5px 21px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    margin-top: 35px;
+}
+
+.boton:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.titulo, .descri{
+    margin: 20px 0;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    padding-right: 160px;
+    padding-bottom: 30px;
+
+}
+
+footer i {
+    width: 60px;
+    padding: 10px;
+    margin-right: 17px;
+   font-size: 3.5rem;
+   text-align: center;
+   color: white;
+   border-radius: 50%;
+   border-color: white;
+   border-style: solid;
+   border-width: 2px;
+   transition-property: background-color, borde-color;
+    transition-duration: 0.3s;
+}
+
+
+
+i:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    /* color: hsl(300, 69%, 71%); */
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+    
+    background-image: url(images/bg-mobile.svg);
+    
+    background-size: 100% 85%;
+   
+    min-height: 100vh;
+        
+    
+    }
+
+
+    .contenido {
+        
+        
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items: center;
+        
+    
+    }
+
+    article{
+        
+        padding: 0;
+        
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+        
+      
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .titulo{
+        
+        
+        font-size: 2.5rem;
+        
+    }
+    
+    .descri{
+        
+        font-size: 2rem;
+    }
+
+    .titulo, .descri{
+        margin: 7px 0;
+    }
+    
+
+    footer{
+        
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        
+    
+    }
+
+    .panel{
+        width: 100%;
+    }
+
+    .boton{
+        margin-top: 20px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:1300px) {
+    article{
+        min-width: 45%;
+        min-height: 100%;
+        padding: 0 0 0 100px;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+        
+      
+    }
+
+
+    .titulo{
+        
+        
+        font-size: 3.5rem;
+        
+    }
+    
+    .descri{
+        
+        font-size: 2rem;
+    }
+
+    .titulo, .descri{
+        margin: 10px 0;
+    }
+
+    .boton{
+        margin-top: 50px;
+    }
+
+    footer{
+        padding-right: 150px;
+    }
+}
